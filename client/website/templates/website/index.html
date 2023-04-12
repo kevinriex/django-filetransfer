@@ -1,0 +1,26 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Client | Filetransfer</title>
+        <meta name="description" content="" />
+        <meta name="lang" content="de" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body class="bg-dark text-white">
+        <div class="container w-50 d-flex flex-justify flex-align-center flex-direction-column">
+            <div class="container">
+                {% bootstrap_messages %}
+                <h1 class="h1">Client</h1>
+                {% crispy form form.helper %}
+            </div>
+        </div>
+    </body>
+</html>
