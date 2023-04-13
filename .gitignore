@@ -1,3 +1,6 @@
-*.pyc
-__pycache__
 uploads/
+__pycache__/
+*.py[cod]
+*$py.class
+client/website/__pycache__/*
+server/website/__pycache__/*
